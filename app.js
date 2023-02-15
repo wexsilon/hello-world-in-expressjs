@@ -15,3 +15,7 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => {
     res.render('index', { title: "Git & Node.js" });
 });
+
+app.listen(8000, () => {
+    console.log("Start Server...");
+});
